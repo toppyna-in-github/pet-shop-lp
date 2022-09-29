@@ -1,0 +1,166 @@
+/* common? */
+.pl-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.pl-link {
+    text-decoration: none !important;
+    color: #000000
+}
+
+
+.pl-cta-btn {
+    border: 0;
+    box-shadow: 0.5rem 0.5rem 0 #4f3535;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 20rem;
+    height: 5rem;
+    margin: 3rem auto 0;
+    color: #fff;
+    font-size: 1.5em;
+    background: #baf9cf;
+    overflow: hidden;
+}
+
+.pl-cta-btn span {
+    position: relative;
+    z-index: 1;
+    transition: .3s;
+}
+
+.pl-cta-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: #fb7d79;
+    transform: translate3d(-100%, 0, 0);
+    transition: .3s;
+}
+
+.pl-cta-btn:hover:before {
+    transform: translate3d(0, 0, 0);
+}
+
+/* header */
+
+.pl-nav-item {
+    white-space: nowrap;
+}
+
+/* top */
+.pl-top-background {
+    background-image: url(../img/twinkle-star.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: fit-content; */
+    height: fit-content;
+
+}
+
+
+
+/* owner */
+.pl-owner-info {
+    border: 1rem solid #baf9cf;
+    border-radius: 1rem;
+}
+
+.pl-owner-messages {
+    border: 1rem solid #fb7d79;
+    border-radius: 1rem;
+}
+
+
+/* footer */
+
+/* ボタン全体 */
+.flowbtn {
+    font-family: 'Arial', sans-serif;
+    /* 好きなフォントを指定してね */
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    width: 66px;
+    height: 58px;
+    font-size: 30px;
+    color: #fff !important;
+    transition: .5s;
+    text-decoration: none;
+    box-shadow: 0 1px 2px #999;
+}
+
+.flowbtn i {
+    position: relative;
+    bottom: 5px;
+}
+
+/* Twitter */
+.fl_tw1 {
+    background: #55acee;
+}
+
+/* Facebook */
+.fl_fb1 {
+    background: #3b5998;
+}
+
+/* Instagram紫グラデ背景 */
+.insta_btn1 {
+    background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    overflow: hidden;
+}
+
+/* Instagramオレンジグラデ背景 */
+.insta_btn1:before {
+    content: '';
+    position: absolute;
+    top: 33px;
+    left: -20px;
+    width: 80px;
+    height: 50px;
+    background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+    background: radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+}
+
+/* ボタン内テキスト調整 */
+.flowbtn div {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0;
+    position: relative;
+    bottom: 22px;
+}
+
+/* ボタンマウスホバー時 */
+.flowbtn:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    text-decoration: none;
+}
+
+/* ulタグの内側余白を０にする */
+ul.snsbtniti {
+    padding: 0 !important;
+}
+
+/* ボタン全体の位置調整 */
+.snsbtniti {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/* ボタン同士の余白調整 */
+.snsbtniti li {
+    flex: 0 0 33%;
+    text-align: center !important;
+}
